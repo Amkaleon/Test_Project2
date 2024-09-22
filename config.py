@@ -8,7 +8,7 @@ def get_data_from_api(url: str) -> dict:
     code_product = url.split('-')[-1]
 
     # Получаем путь к папке с вебдрайвером
-    driver_path = os.path.join(os.path.dirname(__file__), 'chromedriver', 'chromedriver.exe')
+    driver_path = os.path.join(os.path.dirname(__file__), 'chromedriver', 'chromedriver/chromedriver.exe')
 
     # Инициализация сервиса для драйвера
     service = Service(driver_path)
