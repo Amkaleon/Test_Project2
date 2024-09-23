@@ -31,7 +31,7 @@
 
    ```bash
    git clone https://github.com/Amkaleon/Test_Project2.git
-   cd Perekrestok
+   cd Test_Project2
    python pip install -r requirements.txt
    ```
 
