@@ -30,7 +30,7 @@
 1. **Клонируйте репозиторий:**
 
    ```bash
-   git clone https://github.com/yourusername/Perekrestok.git
+   git clone https://github.com/Amkaleon/Test_Project2.git
    cd Perekrestok
    python pip install -r requirements.txt
    ```
@@ -52,7 +52,7 @@
    Вы можете получить доступ к базе данных через следующую команду Docker:
 
    ```bash
-   docker exec -it perekrestok-db-1 psql -U postgres -d postgres
+   docker exec -it test_project2-db-1 psql -U postgres -d postgres
    ```
 
    Также можно подключиться с помощью инструментов, таких как **pgAdmin**, используя следующие параметры:
