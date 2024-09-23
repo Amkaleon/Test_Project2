@@ -32,7 +32,7 @@
    ```bash
    git clone https://github.com/Amkaleon/Test_Project2.git
    cd Test_Project2
-   python pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
 
 2. **Соберите и запустите сервисы:**
