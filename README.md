@@ -31,6 +31,7 @@
    ```bash
    git clone https://github.com/yourusername/Perekrestok.git
    cd Perekrestok
+   python pip intall -r requirements.txt
    ```
 
 2. **Соберите и запустите сервисы:**
