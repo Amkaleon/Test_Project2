@@ -4,22 +4,22 @@ from getuseragent import UserAgent
 from seleniumwire import webdriver
 from selenium.webdriver.chrome.service import Service
 
+
 def get_data_from_api(url: str) -> dict:
     code_product = url.split('-')[-1]
 
     # Получаем путь к папке с вебдрайвером
-    driver_path = os.path.join(os.path.dirname(__file__), 'chromedriver', 'chromedriver/chromedriver.exe')
-
+    driver_path = os.path.join(os.path.dirname(__file__), '../../chromedriver', 'chromedriver.exe')
     # Инициализация сервиса для драйвера
     service = Service(driver_path)
-
     # Инициализация веб-драйвера
     driver = webdriver.Chrome(service=service)
 
     try:
         driver.get(url)
 
-        # Обработка запросов
+        # С помощью selenium-wire можем взять headers requests
+        # В нем мы находим ключ аутентификации для api
         for request in driver.requests:
             if request.response:  # Проверка наличия ответа
                 # Находим файл с продуктом для извлечения токена подключения
@@ -35,10 +35,10 @@ def get_data_from_api(url: str) -> dict:
     finally:
         # Закрытие веб-драйвера
         driver.quit()
+
     # Fake useragent Windows
     useragent = UserAgent("windows+chrome").Random()
 
-    # headers = {"User-Agent": useragent,
     headers = {
         'Authorization':
             f"Bearer {token}",
@@ -52,6 +52,7 @@ def get_data_from_api(url: str) -> dict:
 
     url_api = f'https://www.perekrestok.ru/api/customer/1.4.1.0/catalog/product/plu{code_product}'
 
+    # Выполняем реквест, чтобы собрать данные о продукте
     response = requests.get(url=url_api, headers=headers)
 
     if response.status_code == 200:

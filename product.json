@@ -1,17 +1,32 @@
 {
-    "name": "Биотворог с клубникой с 6 месяцев 4.2% Зелёная Линия, 100г",
-    "price": 46.99,
-    "price_sale": null,
-    "description": "Творог детский Зелёная Линия с клубникой 4.2% 100г предназначен для питания детей старше 6 месяцев. Он приготовлен из цельного и обезжиренного коровьего молока с добавлением специальной творожной закваски. В качестве ягодного наполнителя используется натуральное клубничное пюре. Технология ультрафильтрации позволяет сохранить в твороге молочную сыворотку. Она обогащает его дополнительной порцией белка и кальция, делает консистенцию нежной и кремовой.",
-    "code": "4050946",
+    "name": "Печенье Юбилейное витаминизированное с глазурью, 232г",
+    "price": 139.99,
+    "price_sale": 89.99,
+    "description": "Печенье Юбилейное молочное с темной глазурью- это то самое печенье со 110 летней историей, которое окунет вас в детство.  Нежная тёмная шоколадная глазурь на сладком витаминизированном печенье  будет прекрасным вкусным дессертом на праздничном столе или пикнике, отлично подойдет в качестве полезного перекуса на прогулке, университете или школе, станет идеальной парой к чаю, кофе, соку или молоку.",
+    "code": "4027703",
     "images": [
         {
-            "image_url": "https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/f3/40/e84f2a1590exd58b50c609fc601b.jpg"
+            "image_url": "https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/5f/ed/0de31a2560xd63d42dc829ec5ce5.jpg"
+        },
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/f5/e7/718bff77a1588e6da057d5bd1c59.jpg"
+        },
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/e6/29/d20c80fd0342d4194a076ffea5c6.jpg"
+        },
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/81/b3/9bc52a268c520db985c7bf523747.jpg"
+        },
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/e0/86/f74c5417b2bd81f365f53af76869.jpg"
+        },
+        {
+            "image_url": "https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/df/ae/0127a8e26a5b24c180947dd28267.jpg"
         }
     ],
-    "comment_count": 101,
-    "rating": 4.95,
-    "brand": "Зелёная Линия",
-    "categories": "Детское питание",
-    "content_url": "https://www.perekrestok.ru/cat/230/p/biotvorog-s-klubnikoj-s-6-mesacev-4-2-zelenaa-linia-100g-4050946"
+    "comment_count": 58,
+    "rating": 4.93,
+    "brand": "Юбилейное",
+    "categories": "Печенье, вафли",
+    "content_url": "https://www.perekrestok.ru/cat/197/p/pecene-ubilejnoe-vitaminizirovannoe-s-glazuru-232g-4027703"
 }

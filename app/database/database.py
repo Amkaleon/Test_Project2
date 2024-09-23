@@ -1,5 +1,4 @@
 import json
-import os
 
 import psycopg2
 from psycopg2 import Error
@@ -8,11 +7,10 @@ connection = None
 try:
     # Подключение к существующей базе данных
     connection = psycopg2.connect(
-        user=os.getenv("DATABASE_USER"),
-        password=os.getenv("DATABASE_PASSWORD"),
-        host=os.getenv("DATABASE_HOST"),
-        port=os.getenv("DATABASE_PORT"),
-        database=os.getenv("DATABASE_NAME"))
+        user="postgres",
+        password="3225",
+        database="postgres",
+    )
 
     # Курсор для выполнения операций с базой данных
     cursor = connection.cursor()
@@ -39,6 +37,8 @@ try:
     connection.commit()
 except (Exception, Error) as error:
     print('[!] Ошибка подключения к базе данных')
+    print(error)
+    print(Exception)
 
 finally:
     if connection:
@@ -50,17 +50,16 @@ finally:
 def connect_to_db():
     try:
         # Подключение к существующей базе данных
-
         connection = psycopg2.connect(
-            user=os.getenv("DATABASE_USER"),
-            password=os.getenv("DATABASE_PASSWORD"),
-            host=os.getenv("DATABASE_HOST"),
-            port=os.getenv("DATABASE_PORT"),
-            database=os.getenv("DATABASE_NAME"))
+            user="postgres",
+            password="3225",
+            database="postgres",
+        )
+
         return connection
 
     except (Exception, Error) as error:
-        return None
+        print(error)
 
 
 # Функция для записи значений в таблицу DetMir

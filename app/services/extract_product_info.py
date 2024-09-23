@@ -1,4 +1,4 @@
-from database import connect_to_db, insert_data_list
+from database.database import connect_to_db, insert_data_list
 from psycopg2 import Error
 
 
