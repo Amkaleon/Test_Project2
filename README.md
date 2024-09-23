@@ -11,6 +11,7 @@
     - `extract_product_info.py` - функция собирает полученную информацию о товаре
   - `database/` - содержит скрипт по работе с базой данных
     - `database.py` - подключение и запись в базу данных
+- `chromedriver/` - содержит chromedriver.exe 
 - `product.json` - файл с информацией о продукте
 - `Dockerfile` – конфигурация для Docker-образа.
 - `docker-compose.yml` – конфигурация для управления сервисом PostgreSQL.
