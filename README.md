@@ -41,10 +41,7 @@
    ```bash
    docker-compose up --build
    ```
-
-   Эта команда:
-   - Соберет Docker-образ для приложения.
-   - Запустит сервис PostgreSQL.
+Эта команда соберет и запустит PostgreSQL.
 
 3. **Подключение к PostgreSQL:**
 
